@@ -12,7 +12,9 @@ for instance when you can to access to a child object property when the child ob
 see row 197 and 199 with its message: "Failed to evaluate property ...  of row object of class ..."
 
 With IterableWrapper you can avoid exceptions like this one:
-java.lang.IllegalStateException: Failed to evaluate property secondChild.name of row object of class zu.jxls.jxlsnofault.ParentBean
+```
+java.lang.IllegalStateException: Failed to evaluate property secondChild.name of row object of class 
+zu.jxls.jxlsnofault.ParentBean
 	at org.jxls.command.GridCommand.processBody(GridCommand.java:199)
 	at org.jxls.command.GridCommand.applyAt(GridCommand.java:142)
 	at org.jxls.area.XlsArea.applyAt(XlsArea.java:171)
@@ -47,5 +49,5 @@ Caused by: org.apache.commons.beanutils.NestedNullException: Null property value
 	at org.apache.commons.beanutils.PropertyUtils.getProperty(PropertyUtils.java:464)
 	at org.jxls.command.GridCommand.processBody(GridCommand.java:190)
 	... 27 more
-
+```
 See IterableWrapperTest JUnit test cases
